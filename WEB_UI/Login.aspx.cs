@@ -23,6 +23,7 @@ namespace WEB_UI
         {
             try
             {
+                //d
                 SqlCommand cmd = new SqlCommand("sp_login", con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.Add("@Usuario", System.Data.SqlDbType.VarChar).Value = usuario.Text;
