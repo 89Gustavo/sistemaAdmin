@@ -1,0 +1,146 @@
+﻿{
+  "data": [
+    {
+      "formulario": {
+        "codigoFormulaio": 1,
+        "nombreFormView": "fv_nuevoFormulario",
+        "titulo": "nuevo formulario",
+        "subtitulo": "nuevo formulario",
+        "sperInsert": "spr_insertNuevo",
+        "sprUpdate": "spr_insertNuevo",
+        "sprSelect": "spr_getNuevo",
+        "javascriptOnload": "",
+        "estatus": 1
+      },
+      "objetos": [
+        {
+          "codigoObjeto": 1,
+          "campoTag": "Primer nombre",
+          "titulo": "primerNOmbre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 1,
+          "campoTag": "segundoNombre",
+          "titulo": "segundo Nombre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        }
+      ],
+      "botones": [
+        {
+          "nombre": "guardar",
+          "evento": "guardar"
+        },
+        {
+          "nombre": "guardar 2",
+          "evento": "guardar"
+        }
+      ]
+    },
+    {
+      "formulario": {
+        "codigoFormulaio": 2,
+        "nombreFormView": "fv_nuevoFormulario2",
+        "titulo": "nuevo formulario",
+        "subtitulo": "nuevo formulario",
+        "sperInsert": "spr_insertNuevo",
+        "sprUpdate": "spr_insertNuevo",
+        "sprSelect": "spr_getNuevo",
+        "javascriptOnload": "",
+        "estatus": 1
+      },
+      "objetos": [
+        {
+          "codigoObjeto": 1,
+          "campoTag": "Primer nombre",
+          "titulo": "primerNOmbre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 1,
+          "campoTag": "segundoNombre",
+          "titulo": "segundo Nombre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        }
+      ],
+      "botones": [
+        {
+          "nombre": "guardar",
+          "evento": "guardar"
+        },
+        {
+          "nombre": "guardar 2",
+          "evento": "guardar"
+        }
+      ]
+    },
+    {
+      "formulario": {
+        "codigoFormulaio": 3,
+        "nombreFormView": "fv_nuevoFormulario3",
+        "titulo": "nuevo formulario",
+        "subtitulo": "nuevo formulario",
+        "sperInsert": "spr_insertNuevo",
+        "sprUpdate": "spr_insertNuevo",
+        "sprSelect": "spr_getNuevo",
+        "javascriptOnload": "",
+        "estatus": 1
+      },
+      "objetos": [
+        {
+          "codigoObjeto": 1,
+          "campoTag": "Primer nombre",
+          "titulo": "primerNOmbre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 1,
+          "campoTag": "segundoNombre",
+          "titulo": "segundo Nombre",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        }
+      ],
+      "botones": [
+        {
+          "nombre": "guardar",
+          "evento": "guardar"
+        },
+        {
+          "nombre": "guardar 2",
+          "evento": "guardar"
+        }
+      ]
+    }
+
+  ]
+}
