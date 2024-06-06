@@ -15,8 +15,8 @@
       "objetos": [
         {
           "codigoObjeto": 1,
-          "campoTag": "Primer nombre",
-          "titulo": "primerNOmbre",
+          "campoTag": "titulo1",
+          "titulo": "titulo1",
           "orden": 1,
           "position": 0,
           "tipoDato": 1,
@@ -25,9 +25,53 @@
           "estatus": 1
         },
         {
-          "codigoObjeto": 1,
-          "campoTag": "segundoNombre",
-          "titulo": "segundo Nombre",
+          "codigoObjeto": 2,
+          "campoTag": "titulo2",
+          "titulo": "titulo2",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 3,
+          "campoTag": "titulo3",
+          "titulo": "titulo3",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 4,
+          "campoTag": "titulo4",
+          "titulo": "titulo4",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 5,
+          "campoTag": "titulo5",
+          "titulo": "titulo5",
+          "orden": 1,
+          "position": 0,
+          "tipoDato": 1,
+          "logintudMinima": 0,
+          "longitudMaxima": 64,
+          "estatus": 1
+        },
+        {
+          "codigoObjeto": 6,
+          "campoTag": "titulo6",
+          "titulo": "titulo6",
           "orden": 1,
           "position": 0,
           "tipoDato": 1,
@@ -35,6 +79,8 @@
           "longitudMaxima": 64,
           "estatus": 1
         }
+
+
       ],
       "botones": [
         {
@@ -62,7 +108,7 @@
       "objetos": [
         {
           "codigoObjeto": 1,
-          "campoTag": "Primer nombre",
+          "campoTag": "titulo1",
           "titulo": "primerNOmbre",
           "orden": 1,
           "position": 0,
@@ -72,8 +118,8 @@
           "estatus": 1
         },
         {
-          "codigoObjeto": 1,
-          "campoTag": "segundoNombre",
+          "codigoObjeto": 2,
+          "campoTag": "titulo2",
           "titulo": "segundo Nombre",
           "orden": 1,
           "position": 0,

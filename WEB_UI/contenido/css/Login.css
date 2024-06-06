@@ -1,10 +1,10 @@
-﻿﻿ /* Coded with love by Mutiullah Samim */
+﻿/* Coded with love by Mutiullah Samim */
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #60a3bc !important;
+    background: #787878 !important;
 }
 
 .user_card {
@@ -12,7 +12,7 @@ html {
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #f39c12;
+    background: #134564;
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ html {
     width: 170px;
     top: -75px;
     border-radius: 50%;
-    background: #60a3bc;
+    background: #787878;
     padding: 10px;
     text-align: center;
 }
@@ -48,7 +48,7 @@ html {
 
 .login_btn {
     width: 100%;
-    background: #c0392b !important;
+    background: #1e7e34 !important;
     color: white !important;
 }
 
@@ -62,7 +62,7 @@ html {
 }
 
 .input-group-text {
-    background: #c0392b !important;
+    background: #545b62 !important;
     color: white !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;

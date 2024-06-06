@@ -34,14 +34,16 @@ namespace WEB_UI
                 lblusuario.Text = string.Empty;
             }
             if (Session["usuario"] == null) {
-                Response.Redirect("../Login.aspx");
+                Response.Redirect("/sistemaAdmin/Login.aspx");
             }
         }
 
         protected void cerrarSesion_Click(object sender, EventArgs e)
         {
+
             Session["usuario"] = null;
             Session["codigoRol"] = null;
+           
             Response.Redirect("../Login.aspx");
             HttpContext.Current.Session.Abandon();
         }

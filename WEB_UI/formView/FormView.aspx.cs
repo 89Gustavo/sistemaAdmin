@@ -9,6 +9,7 @@ using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 using Newtonsoft;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -46,46 +47,55 @@ namespace WEB_UI.formView
 
 
             var rs = JsonConvert.DeserializeObject<Resultado>(datos);
-            //JArray jObject = JsonConvert.DeserializeObject<JArray>(JsonConvert.SerializeObject(parametros.pObjParametros));
+          
 
             foreach (var fm in rs.data.Where(x => x.formulario.codigoFormulaio == f))
             { 
                 string codigo  = fm.formulario.codigoFormulaio.ToString();
                 string nombre = fm.formulario.nombreFormView.ToString();
                 string  html2 = "  <form class='row g-'>";
-                html2 += "<h1>"+nombre+"</h1>";
-                html2 += "<h1>" + codigo + "</h1>";
-                html2 += " <div class='col-md-6'>" +
-                             "<label for='inputEmail4' class='form-label'>Email</label>" +
-                             "<input type='email' class='form-control' id='inputEmail4'  runat='server'>" +
-                         "</div>";
+
+                int indice=1;
+                int acumular=2;
+                for (int y = 0; y < fm.objetos.Count / 2; y++)
+                {
+                    html2 += "<div class='row p-2' id='id" +y+"'>";
+
+                    for (int i=indice;i<=acumular; i++)
+                        {
+                        html2 += "<div class='col-md-6'>";
+                        foreach (var obj in fm.objetos.Where(x => x.codigoObjeto ==i))
+                            {
+                                html2 += "<input type='text'id='txt"+obj.campoTag+"' class='form-control' placeholder ='"+obj.titulo+"' aria-label='First name' > ";
+                            }
+                        html2 += "</div>";
+                    }
+                indice += 2;
+                acumular += 2;
+                html2 += "</div>";
+            }
 
                 html2 += "</form>";
                 idFormulario.InnerHtml = html2;
 
             }
 
-            //string html = "  <form class='row g-'>";
-            //html += " <div class='col-md-6'>        " +
-            //             "<label for='inputEmail4' class='form-label'>Email</label>" +
-            //             "<input type='email' class='form-control' id='inputEmail4'  runat='server'>" +
-            //         "</div>";
- 
-            //html += "</form>";
-            //idFormulario.InnerHtml = html;
 
-        
+
             HtmlButton NewButtonControl = new HtmlButton();
 
             NewButtonControl.ID = "NewButtonControl";
             NewButtonControl.Attributes["class"] = "btn btn-primary";
             NewButtonControl.InnerHtml = "guardar";
 
-            NewButtonControl.ServerClick += new System.EventHandler(this.Button_Click);
-
+            //NewButtonControl.ServerClick += new System.EventHandler(this.Button_Click);
+            //NewButtonControl.InnerHtml = "Button_Click";
+            NewButtonControl.ServerClick += new System.EventHandler(this.guardar_Click);
             idFormulario.Controls.Add(NewButtonControl);
 
         }
+
+
         void Button_Click(Object sender, EventArgs e)
         {
 
@@ -97,7 +107,9 @@ namespace WEB_UI.formView
 
         protected void guardar_Click(object sender, EventArgs e)
         {
-            var script = "alert('test');";
+
+            var valor = idFormulario.Controls[0];
+            var script = "alert('"+valor+"');";
             ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
         }
 

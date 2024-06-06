@@ -42,6 +42,15 @@ namespace WEB_UI
         protected global::System.Web.UI.WebControls.TextBox clave;
 
         /// <summary>
+        /// Control Textbox2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Textbox2;
+
+        /// <summary>
         /// Control ingresar.
         /// </summary>
         /// <remarks>

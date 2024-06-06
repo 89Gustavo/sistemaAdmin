@@ -92,6 +92,7 @@
     <Content Include="contenido\dist\js\pages\dashboard.js" />
     <Content Include="contenido\dist\js\pages\dashboard2.js" />
     <Content Include="contenido\dist\js\pages\dashboard3.js" />
+    <Content Include="contenido\js\alertas.js" />
     <Content Include="contenido\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="contenido\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="contenido\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -1961,6 +1962,7 @@
     <Content Include="contenido\plugins\uplot\uPlot.iife.js" />
     <Content Include="contenido\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="contenido\plugins\uplot\uPlot.min.css" />
+    <Content Include="default.aspx" />
     <Content Include="formView\escritorio.aspx" />
     <Content Include="formView\FormView.aspx" />
     <Content Include="formView\formView.js" />
@@ -3866,6 +3868,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="formulario.cs" />
     <Compile Include="formView\escritorio.aspx.cs">
       <DependentUpon>escritorio.aspx</DependentUpon>
