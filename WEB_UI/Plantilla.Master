@@ -2,7 +2,9 @@
 
 
 
-
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -16,6 +18,7 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Google Font: Source Sans Pro -->
+        
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
         <!-- Font Awesome -->
@@ -37,6 +40,8 @@
         <!-- summernote -->
         <link rel="stylesheet" href="../../contenido/plugins/summernote/summernote-bs4.min.css">
 
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../../contenido/js/alertas.js"></script>
 
         <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
         <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.dataTables.css"/>
@@ -235,7 +240,7 @@
                                 ADMIN</a>.</strong>
                     All rights reserved.
                     <div class="float-right d-none d-sm-inline-block">
-                        <b>Version</b> 3.2.0
+                        <b>Version</b> 1.0.0
                     </div>
                 </footer>
 
